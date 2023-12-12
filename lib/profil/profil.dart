@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
+
 // ignore: must_be_immutable
-class DialogBox extends StatelessWidget {
+class profile extends StatelessWidget {
   final controller;
   VoidCallback onsave;
   VoidCallback oncancel;
-   DialogBox({super.key, 
+   profile({super.key, 
    required this.controller,
    required this.onsave,required this.oncancel});
 
@@ -14,7 +15,7 @@ class DialogBox extends StatelessWidget {
     return AlertDialog(
       shape:RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0)),side: BorderSide(color: Colors.purple,width: 3)),
       scrollable: true,
-       title: Text("NEW TASK",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
+       title: Text("PROFILE",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
        shadowColor: Colors.purple,
       backgroundColor: const Color.fromARGB(255, 33, 3, 85),
       content: Container(
@@ -37,8 +38,8 @@ class DialogBox extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
                 borderSide: BorderSide(color: Colors.white), // Border putih saat normal
               ),
-                hintText: "apa yang mau di list",
-                labelText: "list",
+                hintText: "masukan nama kamu",
+                labelText: "name",
                 labelStyle: TextStyle(color: Colors.white),
                 hintStyle: TextStyle(color: Colors.white)
               ),
