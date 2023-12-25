@@ -24,7 +24,7 @@ class myapk extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: animasi(),
+      home: Animasi(),
       theme: ThemeData(primarySwatch: Colors.deepPurple),
     );
   }
